@@ -59,7 +59,7 @@ table {
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), orange ), url("images/headerimg.jpg");
+    background-image: url("images/headerimg.jpg");
 }
 
 .headerContent{
@@ -76,14 +76,26 @@ table {
 
 .headerContent > div > h1{
     font-size: 8rem;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
     font-family: headerFont;
 }
 
 .headerContent > div > h3{
     font-size: 4rem;
+    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
 }
 
 /*Page Content Properties*/
+
+.pageLayout {
+    display: grid;
+    margin: 5em;
+    padding: 15px;
+    max-width: 100%;
+    justify-items: center;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
 
 .introText{
     display: flex;
@@ -91,15 +103,6 @@ table {
     text-align: center;
     margin: 100px;
     padding: 15px;
-}
-
-.pageLayout {
-    display: grid;
-    padding: 15px;
-    max-width: 100%;
-    justify-items: center;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto;
 }
 
 .firstDiv{
@@ -163,4 +166,85 @@ table {
     max-width: 50%;
     height: auto;
     
+}
+
+.disappear{
+    height: 100vh;
+    position: relative;
+}
+
+.disappearText{
+    position: absolute;
+    color: black;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 3em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+}
+
+.disease{
+    height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0),  white), url("images/orangegrove.jpg");
+}
+
+.diseaseText{
+    position: absolute;
+    color: black;
+    max-width: 100%;
+    height: auto;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    font-size: 4em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);;
+}
+
+.signUp{
+    display: flex;
+    max-width: 100%;
+    height: auto;
+    margin: 5em;
+    box-shadow: 1px 1px 5px rgb(161, 161, 161);
+}
+.signUp > div > form{
+    box-sizing: border-box;
+    padding: 1em;
+}
+
+.signUp > div > form > h1{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.signUp > div > form > h3{
+    font-size: 1.5rem;
+}
+
+input[type=text], input[type=email]{
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+button[type=button]{
+    width: 50%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    background: orange;
+    border-color: white;
+    ;
+}
+input[type=checkbox]{
+    margin: 1em;
+}
+.signUp > div > img{
+    max-width: 100%;
+    height: auto;
 }

@@ -56,7 +56,7 @@ table {
 /*Header Properties*/
 
 .header{
-    height: 80vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("images/headerimg.jpg");
@@ -76,13 +76,13 @@ table {
 
 .headerContent > div > h1{
     font-size: 8rem;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
     font-family: headerFont;
 }
 
 .headerContent > div > h3{
     font-size: 4rem;
-    text-shadow: 0 0 1px black, 0 0 1px black, 0 0 1px black, 0 0 1px black;
+    text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
 
 /*Page Content Properties*/
@@ -94,13 +94,14 @@ table {
     max-width: 100%;
     justify-items: center;
     grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto;
 }
 
 .introText{
     display: flex;
     font-size: 3rem;
     text-align: center;
+    justify-content: center;
     margin: 100px;
     padding: 15px;
 }
@@ -176,6 +177,7 @@ table {
 .disappearText{
     position: absolute;
     color: black;
+    text-align: center;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 3em;
     font-weight: bold;
@@ -189,15 +191,16 @@ table {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0),  white), url("images/orangegrove.jpg");
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0),  white 100%), url("images/orangegrove.jpg");
 }
 
 .diseaseText{
     position: absolute;
     color: black;
+    text-align: center;
     max-width: 100%;
     height: auto;
-    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 4em;
     top: 50%;
     left: 50%;
@@ -220,10 +223,12 @@ table {
 .signUp > div > form > h1{
     font-size: 2rem;
     font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
 .signUp > div > form > h3{
     font-size: 1.5rem;
+    margin: 10px 0 0 0;
 }
 
 input[type=text], input[type=email]{
@@ -239,6 +244,7 @@ button[type=button]{
     width: 50%;
     padding: 15px;
     margin: 5px 0 22px 0;
+    color: white;
     background: orange;
     border: none;
     border-radius: 4px;
@@ -264,14 +270,23 @@ input[type=checkbox]{
 .popup{
     width: 400px;
     background: white;
-    position: absolute;
+    position: fixed;
+    z-index: 3;
     border-radius: 6px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) scale(0.1);
     text-align: center;
     padding: 0 30px 30px;
+    box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.33);
     color: orange;
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+
+.open-popup{
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1);
 }
 
 .popup h2 {
@@ -296,4 +311,25 @@ input[type=checkbox]{
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.popup a {
+    text-decoration: underline;
+
+}
+
+@media only screen and (max-width: 1400px) {
+    .signUp{
+        flex-direction: column;
+    }
+    button[type=button]{
+        margin-left: 25%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .pageLayout{
+        grid-template-columns: auto;
+    }
+
 }

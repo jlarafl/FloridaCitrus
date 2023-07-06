@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>Florida Citrus</title>
 </head>
 <body>
@@ -67,7 +66,7 @@
     <section>
         <div class="disease">
             <div class="diseaseText">
-                <h1>Orange groves have been ravaged by disease over the past 20 years and counting</h1>
+                <h1>Orange groves have been ravaged by disease over the past 20 years and counting.</h1>
             </div>
         </div>
     </section>
@@ -90,23 +89,27 @@
                 <input type="checkbox" name="terms" id="terms">
                 <label for="terms">By checking this box, you agree to the terms to receive newsletters</label>
                 <br>
-                <button type="button">Sign Up</button>
+                <button type="button" onclick="openPopup()">Sign Up</button>
 
             </form>
 
         </div>
         <div>
             <img src="images/signup.jpg" alt="">
-        </div>
+        </div>  
+
     </section>
+
     <div class="popupContainer">
-        <div class="popup">
+        <div class="popup" id="popup">
             <img src="images/popup.png" alt="">
             <h2>Thank you!</h2>
-            <p>Although not a real sign up page, you can read about real events regarding this matter <a href="google.com">here</a></p>
-            <button type="button">OK</button>
+            <p>Although not a real sign up page, you can read about real events regarding this matter <a href="https://phys.org/news/2023-03-fruit-crisis-florida-orange-groves.html">here</a></p>
+            <button type="button" onclick="closePopup()">OK</button>
         </div>
     </div>
     
+    
 </body>
+<script src="script.js"></script>
 </html>

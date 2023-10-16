@@ -8,61 +8,148 @@
     src: url('fonts/pagefont/Quicksand-VariableFont_wght.ttf');
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     font-family: contentFont;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*Header Properties*/
 
-.header{
+.header {
     height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url("images/headerimg.jpg");
 }
 
-.headerContent{
+.headerContent {
     display: flex;
     justify-content: end;
     align-items: center;
@@ -70,17 +157,17 @@ table {
     color: white;
 }
 
-.headerContent > div {
+.headerContent>div {
     margin: 1em;
 }
 
-.headerContent > div > h1{
+.headerContent>div>h1 {
     font-size: 8rem;
     text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
     font-family: headerFont;
 }
 
-.headerContent > div > h3{
+.headerContent>div>h3 {
     font-size: 4rem;
     text-shadow: 0 0 2px black, 0 0 2px black, 0 0 2px black, 0 0 2px black;
 }
@@ -89,15 +176,14 @@ table {
 
 .pageLayout {
     display: grid;
-    margin: 5em;
-    padding: 15px;
     max-width: 100%;
     justify-items: center;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
+    background-color: rgba(18, 107, 18, 0.136);
 }
 
-.introText{
+.introText {
     display: flex;
     font-size: 3rem;
     text-align: center;
@@ -106,18 +192,18 @@ table {
     padding: 15px;
 }
 
-.firstDiv{
+.firstDiv {
     max-width: 100%;
     height: auto;
 }
 
-.firstDivImg{
+.firstDivImg {
     display: flex;
     max-width: 100%;
     height: auto;
 }
 
-.firstDivText{
+.firstDivText {
     display: flex;
     font-size: 2rem;
     padding: 1em;
@@ -125,20 +211,20 @@ table {
     align-items: center;
 }
 
-.secondDiv{
+.secondDiv {
     display: flex;
     max-width: 100%;
     height: auto;
     justify-content: center;
 }
 
-.secondDivImg{
+.secondDivImg {
     display: flex;
     max-width: 100%;
     height: auto;
 }
 
-.secondDivText{
+.secondDivText {
     display: flex;
     font-size: 2rem;
     padding: 1em;
@@ -148,33 +234,34 @@ table {
 
 /*Orange Slice Bar*/
 
-.orangeContainer{
+.orangeContainer {
     display: flex;
     max-width: 100%;
     height: auto;
 }
 
-.orangeContainer > div {
+.orangeContainer>div {
     display: flex;
     max-width: 25%;
+    margin: 2em;
     height: auto;
     align-items: center;
     justify-content: center;
 }
 
 
-.orangeSliceimg{
+.orangeSliceimg {
     max-width: 50%;
     height: auto;
-    
+
 }
 
-.disappear{
+.disappear {
     height: 100vh;
     position: relative;
 }
 
-.disappearText{
+.disappearText {
     position: absolute;
     color: black;
     text-align: center;
@@ -183,18 +270,19 @@ table {
     font-weight: bold;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);;
+    transform: translate(-50%, -50%);
+    ;
 }
 
-.disease{
+.disease {
     height: 100vh;
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0),  white 100%), url("images/orangegrove.jpg");
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0), white 100%), url("images/orangegrove.jpg");
 }
 
-.diseaseText{
+.diseaseText {
     position: absolute;
     color: black;
     text-align: center;
@@ -204,10 +292,11 @@ table {
     font-size: 4em;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);;
+    transform: translate(-50%, -50%);
+    ;
 }
 
-.signUp{
+.signUp {
     display: flex;
     max-width: 100%;
     height: auto;
@@ -215,23 +304,25 @@ table {
     margin: 2em;
     box-shadow: 1px 1px 5px rgb(161, 161, 161);
 }
-.signUp > div > form{
+
+.signUp>div>form {
     box-sizing: border-box;
     padding: 5em;
 }
 
-.signUp > div > form > h1{
+.signUp>div>form>h1 {
     font-size: 2rem;
     font-weight: bold;
     margin: 0 0 10px 0;
 }
 
-.signUp > div > form > h3{
+.signUp>div>form>h3 {
     font-size: 1.5rem;
     margin: 10px 0 0 0;
 }
 
-input[type=text], input[type=email]{
+input[type=text],
+input[type=email] {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -240,7 +331,7 @@ input[type=text], input[type=email]{
     background: #f1f1f1;
 }
 
-button[type=button]{
+button[type=button] {
     width: 50%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -249,16 +340,18 @@ button[type=button]{
     border: none;
     border-radius: 4px;
 }
-input[type=checkbox]{
+
+input[type=checkbox] {
     margin: 1em;
 }
-.signUp > div > img{
+
+.signUp>div>img {
     max-width: 100%;
     height: auto;
 }
 
 /*Popup*/
-.popupContainer{
+.popupContainer {
     width: 100%;
     height: auto;
     background: white;
@@ -267,7 +360,7 @@ input[type=checkbox]{
     align-items: center;
 }
 
-.popup{
+.popup {
     width: 400px;
     background: white;
     position: fixed;
@@ -284,7 +377,7 @@ input[type=checkbox]{
     transition: transform 0.4s, top 0.4s;
 }
 
-.open-popup{
+.open-popup {
     visibility: visible;
     transform: translate(-50%, -50%) scale(1);
 }
@@ -294,16 +387,18 @@ input[type=checkbox]{
     font-size: 60px;
     margin: 30px 0px 10px;
 }
+
 .popup p {
     margin-bottom: 5%;
     font-size: 30px;
 }
-.popup img{
+
+.popup img {
     width: 200px;
     border-radius: 50%;
 }
 
-.popup button{
+.popup button {
     border: 0;
     color: white;
     outline: none;
@@ -319,16 +414,17 @@ input[type=checkbox]{
 }
 
 @media only screen and (max-width: 1400px) {
-    .signUp{
+    .signUp {
         flex-direction: column;
     }
-    button[type=button]{
+
+    button[type=button] {
         margin-left: 25%;
     }
 }
 
-@media only screen and (max-width: 900px){
-    .pageLayout{
+@media only screen and (max-width: 900px) {
+    .pageLayout {
         grid-template-columns: auto;
     }
 
